@@ -9,14 +9,14 @@ source:
   sha256: eebb52171a4353aaad01921384098cf54eb96ebfaf99660e017f6d9fc96657a6
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
-    - gcc
+    - {{ compiler('c') }}
+  host:
   run:
-    - libgcc
 
 test:
   commands:
@@ -24,13 +24,13 @@ test:
     - seq 1 10 | datamash sum 1
 
 about:
-  home: https://www.gnu.org/software/datamash/ 
+  home: https://www.gnu.org/software/datamash/
   license: GPL-3.0
   license_family: GPL
   license_file: COPYING
   summary: 'GNU datamash is a command-line program which performs basic numeric,textual
     and statistical operations on input textual data files.'
-  doc_url: https://www.gnu.org/software/datamash/manual/ 
+  doc_url: https://www.gnu.org/software/datamash/manual/
 
 extra:
   recipe-maintainers:
