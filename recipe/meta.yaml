@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.8" %}
 
 package:
   name: datamash
@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://ftpmirror.gnu.org/datamash/datamash-{{ version }}.tar.gz
-  sha256: 574a592bb90c5ae702ffaed1b59498d5e3e7466a8abf8530c5f2f3f11fa4adb3
+  sha256: 7ad97e8c7ef616dd03aa5bd67ae24c488272db3e7d1f5774161c18b75f29f6fd
 
 build:
   number: 0
@@ -15,6 +15,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - make
 
 test:
   commands:
