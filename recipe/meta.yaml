@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://ftpmirror.gnu.org/datamash/datamash-{{ version }}.tar.gz
-  sha256: 94a4e11819ad259aa3745b7eca392e385e3a676d276e8cbb616269dbbb17fe6d
+  sha256: 7ad97e8c7ef616dd03aa5bd67ae24c488272db3e7d1f5774161c18b75f29f6fd
 
 build:
   number: 0
